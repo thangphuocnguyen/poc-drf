@@ -10,3 +10,6 @@ db.sqlite3
 
 # Local Project Configs
 **/configs/settings/environments/local.py
+
+# Secret
+.env

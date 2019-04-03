@@ -5,6 +5,10 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+ipdb = "*"
+django-debug-toolbar = "*"
+nplusone = "*"
+django-querycount = "*"
 
 [packages]
 django = "==2.2"
@@ -12,6 +16,9 @@ djangorestframework = "==3.9.2"
 psycopg2-binary = "*"
 django-split-settings = "*"
 pathlib = "*"
+python-decouple = "*"
+django-csp = "*"
+docutils = "*"
 
 [requires]
 python_version = "3.7"

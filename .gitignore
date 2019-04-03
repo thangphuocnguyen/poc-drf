@@ -5,3 +5,6 @@
 # Workspaces
 db.sqlite3
 .vscode
+
+# Local Project Configs
+**/configs/settings/environments/local.py

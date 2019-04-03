@@ -16,6 +16,10 @@
 
     > nplusone is a library for detecting the n+1 queries problem in Python ORMs, including SQLAlchemy, Peewee, and the Django ORM.
 
++ [django-querycount](https://github.com/bradmontgomery/django-querycount)
+
+    > Middleware that Prints the number of DB queries to the runserver console.
+
 + [Django-CSP](https://github.com/mozilla/django-csp)
 
     > Django-CSP adds Content-Security-Policy headers to Django.

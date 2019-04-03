@@ -1,0 +1,7 @@
+# System files
+.DS_Store
+
+
+# Workspaces
+db.sqlite3
+.vscode

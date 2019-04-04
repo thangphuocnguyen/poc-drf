@@ -21,6 +21,7 @@ django-csp = "*"
 docutils = "*"
 django-health-check = "*"
 psutil = "*"
+django-rest-auth = "==0.9.5"
 
 [requires]
 python_version = "3.7"

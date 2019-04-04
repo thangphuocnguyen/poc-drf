@@ -38,11 +38,14 @@ base_settings = [
     'components/csp.py',
     'components/cache.py',
     'components/healthcheck.py',
+    'components/rest_framework.py',
     
     # # You can even use glob:
     # # 'components/*.py'
+    # Local App Register
+    'components/apps_register.py',
     
-    # # Select the right env:
+    # Select the right env:
     'environments/{}.py'.format(ENV),
     # # Optionally override some settings:
     optional('environments/local.py'),

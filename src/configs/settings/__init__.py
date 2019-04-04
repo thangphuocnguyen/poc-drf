@@ -37,6 +37,7 @@ base_settings = [
     'components/emails.py',  # smtp
     'components/csp.py',
     'components/cache.py',
+    'components/healthcheck.py',
     
     # # You can even use glob:
     # # 'components/*.py'

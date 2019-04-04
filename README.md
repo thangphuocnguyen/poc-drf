@@ -20,6 +20,10 @@
 
     > Middleware that Prints the number of DB queries to the runserver console.
 
++ [django-health-check](https://github.com/KristianOellegaard/django-health-check)
+
+    > A pluggable app that runs a full check on the deployment, using a number of plugins to check e.g. database, queue server, celery processes, etc.
+
 + [Django-CSP](https://github.com/mozilla/django-csp)
 
     > Django-CSP adds Content-Security-Policy headers to Django.

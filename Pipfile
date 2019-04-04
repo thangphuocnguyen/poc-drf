@@ -19,6 +19,8 @@ pathlib = "*"
 python-decouple = "*"
 django-csp = "*"
 docutils = "*"
+django-health-check = "*"
+psutil = "*"
 
 [requires]
 python_version = "3.7"

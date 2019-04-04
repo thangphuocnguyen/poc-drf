@@ -19,10 +19,13 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.contrib.admindocs import urls as admindocs_urls
+from health_check import urls as healthcheck_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('admin/docs/', include(admindocs_urls)),
+    # Health checks:
+    path('health/', include(healthcheck_urls)),
 ]
 
 

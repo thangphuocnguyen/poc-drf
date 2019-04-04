@@ -20,12 +20,17 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.contrib.admindocs import urls as admindocs_urls
 from health_check import urls as healthcheck_urls
+from rest_framework import urls as restframework_urls
+
+from apis import urls as apis_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('admin/docs/', include(admindocs_urls)),
     # Health checks:
     path('health/', include(healthcheck_urls)),
+    path('api-auth/', include(restframework_urls)),
+    path('api/v1/', include(apis_urls)),
 ]
 
 

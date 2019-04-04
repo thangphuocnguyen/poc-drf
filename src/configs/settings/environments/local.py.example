@@ -1,0 +1,15 @@
+"""
+LOCAL DEVELOPMENT CONFIGs.
+
+Override any custom settings here.
+"""
+
+from configs.settings import PROJECT_DIR
+
+# Use sqlite3 for local
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': PROJECT_DIR.joinpath('db.sqlite3').as_posix(),
+    },
+}

@@ -1,0 +1,15 @@
+# System files
+.DS_Store
+
+# Python
+__pycache__/
+
+# Workspaces
+db.sqlite3
+.vscode
+
+# Local Project Configs
+**/configs/settings/environments/local.py
+
+# Secret
+.env

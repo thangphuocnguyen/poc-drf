@@ -20,6 +20,8 @@ from configs.settings import BASE_DIR, autoconfig
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = autoconfig('DJANGO_SECRET_KEY')
 
+SITE_ID = 1
+
 # Application definition
 
 INSTALLED_APPS: Tuple[str, ...] = [
@@ -30,6 +32,7 @@ INSTALLED_APPS: Tuple[str, ...] = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admindocs',
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE: Tuple[str, ...]  = [

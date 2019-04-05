@@ -22,6 +22,9 @@ docutils = "*"
 django-health-check = "*"
 psutil = "*"
 django-rest-auth = "==0.9.5"
+coreapi = "==2.3.3"
+pyyaml = "==5.1"
+django-allauth = "==0.39.1"
 
 [requires]
 python_version = "3.7"

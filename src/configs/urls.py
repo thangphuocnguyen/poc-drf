@@ -19,8 +19,10 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.contrib.admindocs import urls as admindocs_urls
+
 from health_check import urls as healthcheck_urls
-from rest_framework import urls as restframework_urls
+from rest_framework.documentation import include_docs_urls
+from rest_framework.schemas import get_schema_view
 
 from apis import urls as apis_urls
 
@@ -29,7 +31,8 @@ urlpatterns = [
     path('admin/docs/', include(admindocs_urls)),
     # Health checks:
     path('health/', include(healthcheck_urls)),
-    path('api-auth/', include(restframework_urls)),
+    path('docs/', include_docs_urls(title='DRF APIs')),
+    path('schema/', get_schema_view(title='DRF APIs')),
     path('api/v1/', include(apis_urls)),
 ]
 
